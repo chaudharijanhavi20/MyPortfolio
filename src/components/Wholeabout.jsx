@@ -1,6 +1,6 @@
 import React from "react";
 import Sociallinks from "./Sociallinks";
-import NavBar from "./NavBar";
+
 import Gdsc from "../assets/gdsc.png";
 import Csi from "../assets/csi.png";
 import { useState } from "react";
@@ -13,7 +13,7 @@ const Wholeabout = () => {
   };
   return (
     <div name="Allproj" className=" w-full bg-black">
-      <NavBar />
+      
       <div className="max-w-screen-lg p-4 mx-auto flex flex-col justify-center w-full h-full">
         <div>
           <div>
@@ -301,7 +301,7 @@ const Wholeabout = () => {
             <div>
               
                 
-                
+            <div className="ml-5">
                   <div>
                     <p className="text-white text-2xl font-bold"> - Tech Team <span className="text-gray-400">(CSI DMCE)</span></p>
                     <p className="text-gray-200">August 2022 - may 2023</p>
@@ -318,6 +318,7 @@ const Wholeabout = () => {
                     Certificate
                   </button>
                 </div>
+              </div>
               </div>
         </div>
       </div>
