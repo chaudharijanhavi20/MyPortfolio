@@ -5,9 +5,9 @@ import Sociallinks from "./components/Sociallinks.jsx";
 import About from "./components/About.jsx";
 import Projects from "./components/Projects.jsx";
 import Skills from "./components/Skills.jsx";
-
 import Allproj from "./components/Allproj.jsx";
-import Footer from './components/Footer.jsx';
+import Contact from './components/Contact.jsx';
+
 
 
 
@@ -21,7 +21,7 @@ const Main = () => {
       <Projects/>
       <About/>
       
-      <Footer/>
+      <Contact/>
       <Sociallinks/>
       
     </div>

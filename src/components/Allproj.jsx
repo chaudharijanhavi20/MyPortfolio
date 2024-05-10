@@ -10,20 +10,12 @@ import { PiBracketsAngleBold } from "react-icons/pi";
 import NavBar from "./NavBar";
 import { useState } from "react";
 import { FaArrowRight } from "react-icons/fa6";
-import {useNavigate} from 'react-router-dom';
+
 import Home from "./Home"
 
 
 const Allproj = () => {
-  const navigate= useNavigate()
-  const [show, setShow] = useState(false);
-  const ShowName = () => {
-    if (show == true) {
-      setShow(false);
-    } else {
-      setShow(true);
-    }
-  };
+
   const [display, setDisplay] = useState(false);
 
   const handleRedirect = (repositoryUrl) => {
@@ -40,14 +32,7 @@ const Allproj = () => {
           <p className="text-4xl text-white font-semibold mt-20 pt-0">
             <span className="font-bold text-blue-400">/</span>Projects ..
           </p>
-          <button
-            onClick={()=>navigate("/")}
-            className="text-2xl text-white font-bold w-30 h-10 px-6 py-2 my-1 flex items-center rounded-md bg-gradient-to-r from-cyan-500 to-blue-500
-            hover:scale-105"
-          >
-            Back
-            <FaArrowRight />
-          </button>
+          
         </div>
         <p className="text-white pt-5">L i s t O f m y A l l p r o j e c t s . . . .</p>
         <div className="grid mt-10 sm:grid-cols-2 md:grid-cols-3 gap-8 p-4   sm:px-0 ">
