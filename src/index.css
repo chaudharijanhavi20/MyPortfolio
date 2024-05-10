@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&family=Great+Vibes&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base{
+    html{
+        font-family: "Raleway", sans-serif;
+        overflow-x:hidden ;
+    }
+}
+/* @layer font{
+    html{
+        font-family: "Fira Code", monospace;
+    }
+} */
