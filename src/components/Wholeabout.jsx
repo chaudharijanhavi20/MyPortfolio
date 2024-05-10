@@ -1,11 +1,21 @@
 import React from "react";
 import Sociallinks from "./Sociallinks";
-
+import { useNavigate } from "react-router-dom";
 import Gdsc from "../assets/gdsc.png";
 import Csi from "../assets/csi.png";
 import { useState } from "react";
+import { BiLeftArrowAlt } from "react-icons/bi";
 
 const Wholeabout = () => {
+  const navigate = useNavigate();
+  const [show, setShow] = useState(false);
+  const ShowName = () => {
+    if (show == true) {
+      setShow(false);
+    } else {
+      setShow(true);
+    }
+  };
   const [display, setDisplay] = useState(false);
 
   const handleRedirect = (repositoryUrl) => {
@@ -17,8 +27,10 @@ const Wholeabout = () => {
       <div className="max-w-screen-lg p-4 mx-auto flex flex-col justify-center w-full h-full">
         <div>
           <div>
-            <h1 className="text-4xl text-white font-semibold mt-20 pt-0">
-              <span className="font-bold text-blue-400">/</span>About-ME . . . .
+            <h1
+            onClick={() => navigate("/")}
+             className="text-4xl text-white font-semibold mt-20 pt-0 flex flex-row">
+              <span className="font-bold text-blue-400"><BiLeftArrowAlt /></span>About-ME . . . .
             </h1>
           </div>
 

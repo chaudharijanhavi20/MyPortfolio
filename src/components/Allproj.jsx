@@ -10,12 +10,23 @@ import { PiBracketsAngleBold } from "react-icons/pi";
 import NavBar from "./NavBar";
 import { useState } from "react";
 import { FaArrowRight } from "react-icons/fa6";
+import { useNavigate } from "react-router-dom";
+import { BiLeftArrowAlt } from "react-icons/bi";
+
 
 import Home from "./Home"
 
 
 const Allproj = () => {
-
+  const navigate = useNavigate();
+  const [show, setShow] = useState(false);
+  const ShowName = () => {
+    if (show == true) {
+      setShow(false);
+    } else {
+      setShow(true);
+    }
+  };
   const [display, setDisplay] = useState(false);
 
   const handleRedirect = (repositoryUrl) => {
@@ -26,11 +37,13 @@ const Allproj = () => {
       name="Allproj"
       className=" w-full bg-black"
     >
-    <NavBar/>
+    
       <div className="max-w-screen-lg p-4 mx-auto flex flex-col justify-center w-full h-full">
         <div className=" flex justify-between sm:pt-20">
-          <p className="text-4xl text-white font-semibold mt-20 pt-0">
-            <span className="font-bold text-blue-400">/</span>Projects ..
+          <p
+          onClick={() => navigate("/")}
+           className="text-4xl text-white font-semibold mt-20 pt-0 flex flex-row">
+            <span className="font-bold text-blue-400"><BiLeftArrowAlt /></span>Projects ..
           </p>
           
         </div>
