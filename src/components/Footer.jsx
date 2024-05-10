@@ -14,7 +14,7 @@ const Footer = () => {
   return (
     <div className=" bg-black">
     <p className="text-center font-semibold text-blue-500 text-4xl mb-8 font-signature">-- Thanks For visiting --</p>
-    <footer className=" border-t-2 border-gray-300 dark:text-neutral-200 lg:text-left">
+    <footer className=" border-t-2 border-gray-300 text-gray-200 lg:text-left">
    
       {/* <!-- Main container div: holds the entire content of the footer, including four sections (TW Elements, Products, Useful links, and Contact), with responsive styling and appropriate padding/margins. --> */}
       <div className="mx-6 py-10 text-center md:text-left">

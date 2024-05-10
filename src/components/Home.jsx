@@ -17,9 +17,9 @@ const Home = () => {
     <div name="home" className="h-screen w-full bg-black">
     
       <div className="max-w-screen-lg mx-auto flex flex-col items-center justify-center h-full ">
-      <div className="max-w-screen-lg mx-auto flex flex-col items-center justify-center  px-4 md:flex-row">
-          <div className="flex flex-col justify-center items-center h-full ">
-            <h2 className="text-4xl sm:text-7xl font-bold text-white">
+      {/* <div className="max-w-screen-lg mx-auto flex flex-col items-center justify-center  px-4 md:flex-row"> */}
+          <div className="flex flex-col justify-center items-center h-full">
+            <h2 className="text-4xl sm:text-7xl font-bold text-white ">
               <span className="font-bold text-blue-500">Janhavi Chaudhari</span> 
             </h2>
             <p className="text-gray-400 text-3xl mt-4 ">Full Stack Developer</p>
@@ -65,7 +65,7 @@ const Home = () => {
             </div>
             </div> */}
         
-        </div>
+        {/* </div> */}
         {/* <div
               className=" flex justify-center items-center w-full h-12 px-2 py-1 mx-auto mt-16 border  border-blue-400
                p-8 shadow-md s text-white "
